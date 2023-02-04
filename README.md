@@ -21,7 +21,7 @@ Employ-Actevity-Attendance-System in PHP - Code Camp BD<br/>
 <br/>
 Credential for admin panel : <br/>
 Username: admin <br/>
-Password: Watch Youtube ( <a herf = "https://www.youtube.com/@codecampbdofficial"> Video </a> ) <br/>
+Password: Watch Youtube (<a href = "https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw" target="_blank"> Video </a>  ) <br/>
 
 ## User Panel Preview
 
