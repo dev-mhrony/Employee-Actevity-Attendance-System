@@ -20,6 +20,8 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
     <title>Staf Attendance | Dashboard</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
     <?php
   include("header.php");
   ?>
@@ -61,9 +63,7 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                                 <img src="dist/img/me.jpg" style="border-radius: 50%;width: 100x;height: 100px;" alt="User Image">
                             </div>
                         </span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">Settings</a>
-                        <div class="dropdown-divider"></div>
+
                         <form method="POST">
                             <button type="submit" name="logout" class="dropdown-item dropdown-footer">Logout</a>
                         </form>
@@ -293,67 +293,6 @@ Author Website: https://developerrony.com
 Github Link: https://github.com/dev-mhrony
 Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
 -->
-
-            <section class="content">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <table id="example1" class="table table-bordered dataTable no-footer" role="grid" aria-describedby="example1_info">
-                                    <thead>
-                                        <tr>
-                                            <th>Employee ID</th>
-                                            <th>Photo</th>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Schedule</th>
-                                            <th>Member Since</th>
-                                            <th>Tools</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-
-                $sql = "SELECT * FROM emp_list";
-                $result = mysqli_query($db, $sql);
-                while($row = mysqli_fetch_array($result))
-                {
-                ?>
-                                        <!--- Author By: MH RONY
-                Author Website: https://developerrony.com
-                Github Link: https://github.com/dev-mhrony
-                Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-                -->
-
-                                        <tr>
-                                            <td><?php echo $row['emp_card']; ?></td>
-                                            <td><img src="<?php echo $row['emp_photo']; ?>" style="width: 40px;height: 40px;"></td>
-                                            <td><?php echo $row['emp_fname']; ?> <?php echo $row['emp_lname']; ?></td>
-                                            <td><?php echo $row['emp_position']; ?></td>
-                                            <td><?php echo $row['emp_timein']; ?> - <?php echo $row['emp_timeout']; ?></td>
-                                            <td><?php echo $row['emp_regdate']; ?></td>
-                                            <td>
-                                                <button class="btn btn-success btn-flat emp_edit" id="<?php echo $row['emp_id']; ?>"><i class="fas fa-edit"></i></button>
-                                                <button class="btn btn-danger btn-flat emp_delete" id="<?php echo $row['emp_id']; ?>"><i class="fas fa-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        <?php
-                }
-                ?>
-                                        <!--- Author By: MH RONY
-                Author Website: https://developerrony.com
-                Github Link: https://github.com/dev-mhrony
-                Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-                -->
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!--- Author By: MH RONY
 Author Website: https://developerrony.com
 Github Link: https://github.com/dev-mhrony
@@ -370,6 +309,10 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
         <?php
 include("footer.php");
 ?>
+
+        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="plugins/datatables/jquery.dataTables.js"></script>
+        <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 </body>
 
 </html>

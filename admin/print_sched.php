@@ -77,9 +77,7 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
                                 <img src="dist/img/me.jpg" style="border-radius: 50%;width: 100x;height: 100px;" alt="User Image">
                             </div>
                         </span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">Settings</a>
-                        <div class="dropdown-divider"></div>
+
                         <form method="POST">
                             <button type="submit" name="logout" class="dropdown-item dropdown-footer">Logout</a>
                         </form>
