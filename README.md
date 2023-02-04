@@ -13,9 +13,9 @@ Employ-Actevity-Attendance-System in PHP - Code Camp BD<br/>
 <br/>
 4. Open PHPMyAdmin (http://localhost/phpmyadmin)<br/>
 <br/>
-5. Create a database with the name staf_attendance<br/>
+5. Create a database with the name staf_activity<br/>
 <br/>
-6. Import staf_attendance.sql file(given inside the zip package in the SQL file folder)<br/>
+6. Import staf_activity.sql file(given inside the zip package in the SQL file folder)<br/>
 <br/>
 7. Run the script http://localhost/"FolderName"<br/>
 <br/>
