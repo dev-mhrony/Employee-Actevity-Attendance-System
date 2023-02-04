@@ -5,6 +5,10 @@ Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
 -->
 <?php
 include("controller.php");
+
+if($_SESSION == ""){
+    header("Location: index.php"); 
+}
 ?>
 <!DOCTYPE html>
 <html>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 03, 2023 at 01:54 PM
+-- Generation Time: Feb 04, 2023 at 03:58 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -58,6 +58,13 @@ CREATE TABLE `emp_attendance` (
   `attendance_hour` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `emp_attendance`
+--
+
+INSERT INTO `emp_attendance` (`attendance_id`, `employee_id`, `employee_name`, `attendance_date`, `attendance_timein`, `attendance_timeout`, `attendance_hour`) VALUES
+(1, '1', 'Hasan, Md. Mehedi', '2023-02-04', '11:55:51', '11:56:01', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -80,6 +87,13 @@ CREATE TABLE `emp_list` (
   `emp_photo` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `emp_list`
+--
+
+INSERT INTO `emp_list` (`emp_id`, `emp_card`, `emp_fname`, `emp_lname`, `emp_position`, `emp_address`, `emp_contact`, `emp_gender`, `emp_timein`, `emp_timeout`, `sched_id`, `emp_regdate`, `emp_photo`) VALUES
+(1, '1', 'Md. Mehedi', 'Hasan', 1, 'Sonatola Puraton bondor , Sonatola , Bogura .', '01608445456', 'Male', '09:54:00', '17:00:00', 1, '2023-02-04', 'img/Untitled-2.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -91,6 +105,13 @@ CREATE TABLE `emp_position` (
   `position_title` varchar(100) NOT NULL,
   `position_rate` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `emp_position`
+--
+
+INSERT INTO `emp_position` (`pos_id`, `position_title`, `position_rate`) VALUES
+(1, 'Staf', 8);
 
 -- --------------------------------------------------------
 
@@ -104,6 +125,13 @@ CREATE TABLE `emp_sched` (
   `sched_out` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `emp_sched`
+--
+
+INSERT INTO `emp_sched` (`sched_id`, `sched_in`, `sched_out`) VALUES
+(1, '09:54:00', '17:00:00');
+
 -- --------------------------------------------------------
 
 --
@@ -115,6 +143,13 @@ CREATE TABLE `salary_deduct` (
   `deduct_desc` varchar(100) NOT NULL,
   `deduct_amount` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `salary_deduct`
+--
+
+INSERT INTO `salary_deduct` (`deduct_id`, `deduct_desc`, `deduct_amount`) VALUES
+(1, 'A Group', 10000);
 
 --
 -- Indexes for dumped tables
@@ -170,31 +205,31 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT for table `emp_attendance`
 --
 ALTER TABLE `emp_attendance`
-  MODIFY `attendance_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `attendance_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `emp_list`
 --
 ALTER TABLE `emp_list`
-  MODIFY `emp_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `emp_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `emp_position`
 --
 ALTER TABLE `emp_position`
-  MODIFY `pos_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `pos_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `emp_sched`
 --
 ALTER TABLE `emp_sched`
-  MODIFY `sched_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `sched_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `salary_deduct`
 --
 ALTER TABLE `salary_deduct`
-  MODIFY `deduct_id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `deduct_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
