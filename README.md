@@ -29,6 +29,8 @@ Password: Watch Youtube ( <a herf = "#"> Video </a> ) <br/>
 
 ## Admin Panel Preview
 
+![01 (6)](https://user-images.githubusercontent.com/78216965/216753667-25bc51e2-e035-4a9f-ae8a-46ea2f8a44a6.png)
+
 ![01 (1)](https://user-images.githubusercontent.com/78216965/216753650-b660a81f-e165-4c7c-8cf2-8cd8b7a38b76.png)
 
 ![01 (2)](https://user-images.githubusercontent.com/78216965/216753656-8a7de273-64bb-4ec5-a410-9c31ab825961.png)
@@ -38,8 +40,6 @@ Password: Watch Youtube ( <a herf = "#"> Video </a> ) <br/>
 ![01 (4)](https://user-images.githubusercontent.com/78216965/216753663-310cddae-26f0-4903-8edd-df493b0151d1.png)
 
 ![01 (5)](https://user-images.githubusercontent.com/78216965/216753664-3990bef2-49be-42ac-89ac-0790216668e6.png)
-
-![01 (6)](https://user-images.githubusercontent.com/78216965/216753667-25bc51e2-e035-4a9f-ae8a-46ea2f8a44a6.png)
 
 ![01 (8)](https://user-images.githubusercontent.com/78216965/216753669-526bf130-4ffb-4014-9ac0-b1f49678096a.png)
 
