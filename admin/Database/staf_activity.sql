@@ -40,7 +40,7 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `username`, `password`, `name`, `type`) VALUES
-(2, 'admin', '6ce37c5ba1f4a8ecedea6b8b1fc7b8c5', 'Code Camp BD', 'Admin');
+(2, 'admin', '822bd8ff7e49a8ccce2d23b7f9b074a4', 'Code Camp BD', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ INSERT INTO `emp_position` (`pos_id`, `position_title`, `position_rate`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `emp_sched`
+-- Table structure for table `staff_activity`
 --
 
 CREATE TABLE `emp_sched` (
